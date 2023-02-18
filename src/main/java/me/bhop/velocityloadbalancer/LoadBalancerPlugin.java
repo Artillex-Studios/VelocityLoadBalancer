@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
         id = "loadbalancer",
         name = "LoadBalancer",
         version = "1.1",
+        url = "load.balancer",
         authors = {"bhop_"},
         description = "A server load balancer for Velocity."
 )
@@ -47,14 +48,6 @@ public class LoadBalancerPlugin {
     public void onLeave(DisconnectEvent event) {
         connectedPlayers.remove(event.getPlayer().getUniqueId());
     }
-
-    //@Subscribe
-    //public void onKick(KickedFromServerEvent event) {
-    //    if (event.kickedDuringServerConnect())
-    //        return;
-    //    Optional<RegisteredServer> opt = proxyServer.getAllServers().stream().filter(server -> server != event.getServer()).filter(lobbies::contains).min(Comparator.comparingInt(s -> s.getPlayersConnected().size()));
-    //    opt.ifPresent(registeredServer -> event.setResult(KickedFromServerEvent.RedirectPlayer.create(registeredServer)));
-    // }
 
     @Subscribe
     public void onJoin(ServerPreConnectEvent event) {

@@ -1,0 +1,1 @@
+{"id":"loadbalancer","name":"LoadBalancer","version":"1.1","description":"A server load balancer for Velocity.","url":"load.balancer","authors":["bhop_"],"dependencies":[],"main":"me.bhop.velocityloadbalancer.LoadBalancerPlugin"}
